@@ -1,0 +1,448 @@
+{
+    "Bot":{
+        "turnOn":{
+            "command": "turnOn",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "turnOff":{
+            "command": "turnOff",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "Press":{
+            "command": "press",
+            "parameter": "default",
+            "commandType": "command"
+        }
+    },
+    "Curtain": {
+        "setPosition":{
+            "command": "setPosition",
+            "parameter": "",
+            "commandType": "command"
+        },
+        "TurnOff":{
+            "command": "turnOff",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "turnOn":{
+            "command": "turnOn",
+            "parameter": "default",
+            "commandType": "command"
+        }
+    },
+    "Lock": {
+        "lock":{
+            "command": "lock",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "unlock":{
+            "command": "unlock",
+            "parameter": "default",
+            "commandType": "command"
+        }
+    },
+    "Humidifier": {
+        "turnOff":{
+            "command": "turnOff",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "turnOn":{
+            "command": "turnOn",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "setMode":{
+            "command": "setMode",
+            "parameter": -1,
+            "commandType": "command"
+        }
+    },
+    "Plug": {
+        "turnOff":{
+            "command": "turnOff",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "turnOn":{
+            "command": "turnOn",
+            "parameter": "default",
+            "commandType": "command"
+        }
+    },
+    "Plug Mini": {
+        "turnOff":{
+            "command": "turnOff",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "turnOn":{
+            "command": "turnOn",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "toggle":{
+            "command": "toggle",
+            "parameter": "default",
+            "commandType": "command"
+        }
+    },
+    "Color Bulb": {
+        "turnOff":{
+            "command": "turnOff",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "turnOn":{
+            "command": "turnOn",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "toggle":{
+            "command": "toggle",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "setBrightness":{
+            "command": "setBrightness",
+            "parameter": -1,
+            "commandType": "command"
+        },
+        "setColor":{
+            "command": "setColor",
+            "parameter": "",
+            "commandType": "command"
+        },
+        "setColorTemperature":{
+            "command": "setColorTemperature",
+            "parameter": -1,
+            "commandType": "command"
+        }
+    },
+    "Strip Light": {
+        "turnOff":{
+            "command": "turnOff",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "turnOn":{
+            "command": "turnOn",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "toggle":{
+            "command": "toggle",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "setBrightness":{
+            "command": "setBrightness",
+            "parameter": -1,
+            "commandType": "command"
+        },
+        "setColor":{
+            "command": "setColor",
+            "parameter": "",
+            "commandType": "command"
+        }
+    },
+    "Robot Vacuum Cleaner S1": {
+        "start":{
+            "command": "start",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "stop":{
+            "command": "stop",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "dock":{
+            "command": "dock",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "PowLevel":{
+            "command": "PowLevel",
+            "parameter": -1,
+            "commandType": "command"
+        }
+    },
+    "Robot Vacuum Cleaner S1 Plus": {
+        "start":{
+            "command": "start",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "stop":{
+            "command": "stop",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "dock":{
+            "command": "dock",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "PowLevel":{
+            "command": "PowLevel",
+            "parameter": -1,
+            "commandType": "command"
+        }
+    },
+    "Ceiling Light": {
+        "turnOn":{
+            "command": "turnOn",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "turnOff":{
+            "command": "turnOff",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "toggle":{
+            "command": "toggle",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "setBrightness":{
+            "command": "setBrightness",
+            "parameter": -1,
+            "commandType": "command"
+        },
+        "setColorTemperature":{
+            "command": "setColorTemperature",
+            "parameter": -1,
+            "commandType": "command"
+        }
+    },
+    "Ceiling Light Pro": {
+        "turnOn":{
+            "command": "turnOn",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "turnOff":{
+            "command": "turnOff",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "toggle":{
+            "command": "toggle",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "setBrightness":{
+            "command": "setBrightness",
+            "parameter": -1,
+            "commandType": "command"
+        },
+        "setColorTemperature":{
+            "command": "setColorTemperature",
+            "parameter": -1,
+            "commandType": "command"
+        }
+    },
+    "Keypad": {
+        "createKey":{
+            "command": "createKey",
+            "parameter": {
+                "name": "", 
+                "type": "",
+                "password":"",
+                "startTime":-1,
+                "endTime": -1
+            },
+            "commandType": "command"
+        },
+        "deleteKey":{
+            "command": "deleteKey",
+            "parameter": {
+                "id": -1
+            },
+            "commandType": "command"
+        }
+    },
+    "Keypad Touch": {
+        "createKey":{
+            "command": "createKey",
+            "parameter": {
+                "name": "", 
+                "type": "",
+                "password":"",
+                "startTime":-1,
+                "endTime": -1
+            },
+            "commandType": "command"
+        },
+        "deleteKey":{
+            "command": "deleteKey",
+            "parameter": {
+                "id": -1
+            },
+            "commandType": "command"
+        }
+    },
+    "Blind Tilt": {
+        "setPosition":{
+            "command": "createKey",
+            "parameter": "",
+            "commandType": "command"
+        },
+        "fullyOpen":{
+            "command": "fullyOpen",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "closeUp":{
+            "command": "closeUp",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "closeDown":{
+            "command": "closeDown",
+            "parameter": "default",
+            "commandType": "command"
+        }
+    },
+    "Air Conditioner": {
+        "setAll":{
+            "command": "setAll",
+            "parameter": "",
+            "commandType": "command"
+        }
+    },
+    "TV/IPTV/Streamer/Set Top Box": {
+        "volumeAdd":{
+            "command": "volumeAdd",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "volumeSub":{
+            "command": "volumeSub",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "channelAdd":{
+            "command": "channelAdd",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "channelSub":{
+            "command": "channelSub",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "SetChannel":{
+            "command": "volumeAdd",
+            "parameter": -1,
+            "commandType": "command"
+        }
+    },
+    "DVD/Speaker": {
+        "setMute":{
+            "command": "setMute",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "FastForward":{
+            "command": "FastForward",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "Rewind":{
+            "command": "Rewind",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "Next":{
+            "command": "Next",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "Previous":{
+            "command": "Previous",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "Pause":{
+            "command": "Pause",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "Play":{
+            "command": "Play",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "Stop":{
+            "command": "Stop",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "volumeAdd":{
+            "command": "volumeAdd",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "volumeSub":{
+            "command": "volumeSub",
+            "parameter": "default",
+            "commandType": "command"
+        }
+    },
+    "Fan": {
+        "swing":{
+            "command": "swing",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "timer":{
+            "command": "timer",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "lowSpeed":{
+            "command": "lowSpeed",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "middleSpeed":{
+            "command": "middleSpeed",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "highSpeed":{
+            "command": "highSpeed",
+            "parameter": "default",
+            "commandType": "command"
+        }
+    },
+    "Light": {
+        "brightnessUp":{
+            "command": "brightnessUp",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "brightnessDown":{
+            "command": "brightnessDown",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "turnOn":{
+            "command": "turnOn",
+            "parameter": "default",
+            "commandType": "command"
+        },
+        "turnOff":{
+            "command": "turnOff",
+            "parameter": "default",
+            "commandType": "command"
+        }
+    }
+}
