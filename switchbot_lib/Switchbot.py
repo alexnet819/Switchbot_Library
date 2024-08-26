@@ -50,7 +50,7 @@ class Switchbot:
         self.config_path = path
         file = Config.Config()
         #self.__config = Config.Config()
-        self.__config = file.Read(self.config_path)
+        self.__config = file.read(self.config_path)
         self.__set_Config()
         return True
    
@@ -89,7 +89,7 @@ class Switchbot:
             count += 1
         data += f'\n]\n}}'
         #ファイル書き出し
-        _conf.Write(path, data)
+        _conf.write(path, data)
 
 
     def __set_Device_Config(self, value):
@@ -256,3 +256,149 @@ class Switchbot:
         command['parameter'] = param
         return command
 
+import json
+from .Config import Config
+from .Http_Client import Http_Client
+from .Device import Device
+from .Scene import Scene
+
+class Switchbot:
+	def __init__(self, token: str = None, secret: str = None) -> None:
+		self.__client = None
+		self.__config = {}
+		self.devices = []
+		self.remote_devices = []
+		self.scenes = []
+		self.token = token or ""
+		self.secret = secret or ""
+		self.config_path = ""
+
+		self.load_commands()
+		if token and secret:
+			self.__client = Http_Client(token, secret)
+
+	def load_commands(self) -> None:
+		with open("./switchbot_lib/command.json", 'r', encoding="utf-8") as f:
+			self.commands = json.load(f)
+
+	def load_config(self, path: str) -> bool:
+		config = Config()
+		self.__config = config.read(path)
+		self.__set_config()
+		return True
+
+	def show_config(self) -> None:
+		print(self.__config)
+
+	def show_commands(self) -> None:
+		print(self.commands)
+
+	def save_config(self, path: str = None) -> None:
+		if not path:
+			path = self.config_path
+		config = Config()
+		data = {
+			"API_Key": {
+				"token": self.token,
+				"secret": self.secret
+			},
+			"deviceList": [device.create_json() for device in self.devices],
+			"infraredRemoteList": [remote.create_json() for remote in self.remote_devices],
+			"senceList": [scene.create_json() for scene in self.scenes]
+		}
+		config.write(path, data)
+
+	def __set_config(self) -> None:
+		try:
+			if "API_Key" in self.__config:
+				self.token = self.__config['API_Key'].get('token', "")
+				self.secret = self.__config['API_Key'].get('secret', "")
+				self.__client = Http_Client(self.token, self.secret)
+			if "deviceList" in self.__config:
+				self.devices = [Device(dev, self.__client) for dev in self.__config['deviceList']]
+			if "infraredRemoteList" in self.__config:
+				self.remote_devices = [Device.Remote_Device(remote, self.__client) for remote in self.__config['infraredRemoteList']]
+			if "senceList" in self.__config:
+				self.scenes = [Scene(scene, self.__client) for scene in self.__config['senceList']]
+		except TypeError as e:
+			print('Data not found')
+
+	def get_device(self, devid: str) -> Device:
+		# Implementation here
+		pass
+
+	def get_devices_from_server(self) -> None:
+		# Implementation here
+		pass
+
+	def get_devices_from_config(self) -> dict:
+		# Implementation here
+		pass
+
+	def check_status_code(self, code) -> bool:
+		# Implementation here
+		pass
+
+	def get_remotes_from_config(self) -> dict:
+		# Implementation here
+		pass
+
+	def get_remote(self, devid: str) -> Device.Remote_Device:
+		# Implementation here
+		pass
+
+	def get_sense(self, devid: str) -> Scene:
+		# Implementation here
+		pass
+
+	def get_scenes_from_server(self) -> None:
+		# Implementation here
+		pass
+
+	def get_scenes_from_config(self) -> dict:
+		# Implementation here
+		pass
+
+	def create_curtain_set_position(self, mode, position) -> dict:
+		# Implementation here
+		pass
+
+	def create_set_mode(self, param) -> dict:
+		# Implementation here
+		pass
+
+	def create_set_brightness(self, param) -> dict:
+		# Implementation here
+		pass
+
+	def create_set_color(self, red, blue, green) -> dict:
+		# Implementation here
+		pass
+
+	def create_set_color_temperature(self, param) -> dict:
+		# Implementation here
+		pass
+
+	def create_pow_level(self, param) -> dict:
+		# Implementation here
+		pass
+
+	def create_create_key(self, name, type, password, start_time, end_time) -> dict:
+		# Implementation here
+		pass
+
+	def create_delete_key(self, param) -> dict:
+		# Implementation here
+		pass
+
+	def create_blind_tilt_set_position(self, mode, position) -> dict:
+		# Implementation here
+		pass
+
+	def create_air_conditioner_set_all(self, temp, mode, fanspd, power) -> dict:
+		# Implementation here
+		pass
+
+	def create_set_channel(self, param) -> dict:
+		# Implementation here
+		pass
